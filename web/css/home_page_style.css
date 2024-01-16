@@ -1,0 +1,104 @@
+.guest_container {
+    /* Cố định vị trí div container khi scroll */
+    position: fixed;
+
+    /* Loại bỏ padding */
+    padding: 0px;
+}
+
+.guest_header {
+    /* Chiều rộng 100% để kéo dài full màn hình */
+    width: 100%;
+
+    /* Tạo bóng cho header */
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 1);
+}
+
+.form-control-dark {
+    /* Đặt màu chữ trắng cho input */
+    color: white;
+}
+
+.text-bg-dark::placeholder {
+    /* Đặt màu placeholder trắng cho input */
+    color: white;
+}
+
+.custom-carousel-item img {
+    /* Điều chỉnh kích thước hình ảnh trong carousel */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.menuCategory {
+
+    /* Tạo đường viền bottom */
+    border-bottom: solid 1px rgba(0,0,0,0.1);
+
+    /* Nền màu xám nhạt */
+    background: #f3f3f3;
+
+    /* Căn giữa các item */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Định dạng styling cho các item */
+.menuCategory .item {
+    padding: 10px 20px;
+    border-right: solid 1px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+/* Centre icon */
+.menuCategory .item .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* Làm item có thể click được */
+.menuCategory .item a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.dropdown {
+    /* Đặt vị trí tương đối để options nằm trong này */
+    position: relative;
+}
+
+.dropdown-options {
+
+    /* Ẩn đi khi chưa active */
+    display: none;
+
+    /* Đặt các thuộc tính về 0 */
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    /* Chiếm toàn bộ chiều ngang */
+    width: 100vw;
+
+    /* Shadow và padding cho menu */
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 1);
+    padding-top: 5px;
+}
+
+/* Màu nền cho menu category */
+.menuCategory{
+    background-color: #ffca2c;
+}
+
+/* Giảm khoảng cách giữa các item trong serviceList */
+.serviceList li{
+    margin: 2px;
+    padding:0;
+}
